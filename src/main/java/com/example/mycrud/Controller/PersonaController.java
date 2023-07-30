@@ -50,8 +50,9 @@ public class PersonaController {
 	     Persona personaEntity = modelMapper.map(personaDto, Persona.class);
 	     personaEntity = personaService.crearEditarPersona(personaEntity);
 	     
-	     System.out.println("Con ModelMapper");
-	        
+	     System.out.println("Con ModelMapper ");
+	     System.out.println("Second test ");
+
 		
 		return new ResponseEntity<PersonaDosDTO>(modelMapper.map(personaEntity, PersonaDosDTO.class), HttpStatus.CREATED);
 	}
